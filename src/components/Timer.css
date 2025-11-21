@@ -1,0 +1,22 @@
+
+.timer {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.1rem;
+
+  font-family: "IBM Plex Mono", Menlo, Consolas, monospace;
+  font-size: clamp(5rem, 8vw + 1rem, 6rem);
+  /* letter-spacing: 0.05em; */
+
+  color: var(--text-color);
+}
+
+.digits {
+  line-height: 1;
+}
+
+.digits.centiseconds {
+  font-size: 0.6em;
+  margin-bottom: 0.1rem;
+}

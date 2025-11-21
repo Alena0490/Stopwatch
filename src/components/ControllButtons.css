@@ -1,0 +1,130 @@
+.stop-watch-controls {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.stop-watch-controls button {
+    position: relative;
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem 2.5rem;
+    max-width: 160px;
+
+    border-radius: 9999px;
+    border: none;
+    font-size: 1.125rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+
+    cursor: pointer;
+    box-shadow: 
+        0 14px 26px #000000;
+    transition:
+        transform 140ms ease-out,
+        box-shadow 140ms ease-out,
+        filter 140ms ease-out;
+}
+
+.stop-watch-controls button:hover,
+.stop-watch-controls button:focus-visible {
+    outline: none;
+    transform: translateY(-1px);
+    filter: brightness(1.06);
+    box-shadow: 0 20px 34px #000000;
+}
+
+.stop-watch-controls .btn-main {
+    background: linear-gradient(
+        180deg, 
+        var(--secondary-color), 
+        var(--secondary-color-dark)
+    );
+    color: var(--text-color-inverted);
+}
+
+.btn-main:hover,
+.btn-main:focus-visible {
+    background: linear-gradient(
+        180deg, 
+        var(--secondary-color-light), 
+        var(--secondary-color-dark)
+    );
+}
+
+.stop-watch-controls .btn-secondary {
+    position: relative;
+    top: 2px;
+    left: 2px;
+    display: flex;
+    height: calc(100% - 2px);
+    width: calc(100% - 2px);
+    text-align: center;
+    background: linear-gradient(
+        180deg, 
+        var(--background-color), 
+        var(--background-color-dark)
+    );
+    color: var(--secondary-color);
+    border-radius: 999px;
+}
+
+.stop-watch-controls .btn-secondary::after {
+    content: "";
+    height: calc(100% - 2px);
+    width: calc(100% - 2px);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /* translate: -50% -50%; */
+    padding: 2px;  /* ← Border šířka */
+    background: linear-gradient(
+        180deg,
+        var(--secondary-color-light),
+        var(--secondary-color-dark)
+    );
+    border-radius: 9999px;
+    z-index: 0;
+}
+
+.stop-watch-controls .btn-secondary::before {
+    content: "";
+    height: calc(100% - 2px);
+    width: calc(100% - 2px);
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background: linear-gradient(
+        180deg, 
+        var(--background-color), 
+        var(--background-color-dark)
+    );
+    border-radius: 999px;
+    z-index: 1;
+}
+
+.btn-text {
+    position: relative;
+    z-index: 2;
+}
+
+.stop-watch-controls .btn-secondary:hover,
+.stop-watch-controls .btn-secondary:focus-visible {
+  filter: brightness(1.04);
+}
+
+@media (max-width: 480px) {
+  .stop-watch-controls {
+    max-width: none;
+    gap: 0.75rem;
+  }
+
+  .stop-watch-controls button {
+    font-size: 0.75rem;
+    padding: 1.75rem 1.75rem;
+  }
+}
