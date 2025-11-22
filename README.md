@@ -125,7 +125,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 👩‍💻 Author
 
-**Alena**
+Alena Pumprová
 
 - GitHub: [@Alena0490](https://github.com/Alena0490)
 
@@ -138,4 +138,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Made with ❤️ and ☕**
+Made with ❤️ and ☕

@@ -31,7 +31,7 @@
 /* Mobile*/
 @media (max-width: 480px) {
     body {
-        padding: 5rem 0;
+        padding: 7.5rem 0 4rem;
         margin: 0%;
     }
 
