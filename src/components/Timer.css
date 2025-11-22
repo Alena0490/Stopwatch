@@ -21,3 +21,11 @@
   font-size: 0.6em;
   margin-bottom: 0.1rem;
 }
+
+
+@media (max-width: 750px) {
+    .timer {
+        font-size: clamp(3.75rem, 15vw + 1rem, 7rem);
+        gap: 0;
+    }
+}

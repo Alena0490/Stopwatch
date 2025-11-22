@@ -1,7 +1,7 @@
 .stop-watch-controls {
   margin-top: 1.5rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 1.25rem;
 }
 
@@ -117,6 +117,16 @@
   filter: brightness(1.04);
 }
 
+@media (max-width: 750px) {
+    .stop-watch-controls button {
+        width: 100%;
+        font-size: 1.75rem;
+        padding: 0. 0.125rem;
+        justify-content: space-between;
+    }
+
+}
+
 @media (max-width: 480px) {
   .stop-watch-controls {
     max-width: none;
@@ -124,7 +134,7 @@
   }
 
   .stop-watch-controls button {
-    font-size: 0.75rem;
+    font-size: 1.25rem;
     padding: 1.75rem 1.75rem;
   }
 }

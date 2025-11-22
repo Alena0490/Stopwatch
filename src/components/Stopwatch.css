@@ -19,10 +19,32 @@
     gap: 2rem;
 }
 
+@media (max-width: 750px) {
+    .stop-watch {
+        max-width: unset;
+        min-height: 450px;
+        justify-content: space-between;
+        margin-inline: 2rem;
+    }
+}
+
 /* Mobile*/
 @media (max-width: 480px) {
+    body {
+        padding: 5rem 0;
+        margin: 0%;
+    }
+
     .stop-watch {
         padding: 2rem 1.5rem;
         border-radius: 1.5rem;
+        margin-inline: 0.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .stop-watch {
+        padding: 2rem 0.75rem;
+        min-width: 340px;
     }
 }

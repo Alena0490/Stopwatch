@@ -42,3 +42,10 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+@media (max-width: 750px) {
+    body {
+       align-items: flex-start;
+       padding: 5rem 1rem;
+    }
+}
